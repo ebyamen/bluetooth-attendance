@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.distresx.bluetoothyoklama">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.distresx.bluetoothyoklama.Homescreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.distresx.bluetoothyoklama.Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.Add_class"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.BluetoothScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.ClassDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.MarkStudentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.WifiLandingPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.NsdChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.ContestUpload"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.ViewHistoryOptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.ContestRules"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.DisplayQuestions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.ResultContestant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.distresx.bluetoothyoklama.ContestantResultList"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.distresx.bluetoothyoklama.service.TimerBroadcastService"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.distresx.bluetoothyoklama.ContestHistoryList"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.distresx.bluetoothyoklama.ParticipantHistoryList"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.distresx.bluetoothyoklama.ContestParticipatedList"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

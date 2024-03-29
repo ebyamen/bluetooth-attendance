@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DisplayQuestions"
+    android:background="@color/main_back_red">
+
+    <include layout="@layout/layout_toolbar_wifi"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0:00"
+                android:id="@+id/timerTextView"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Question Statement"
+                android:id="@+id/quesStatement"
+                android:layout_below="@+id/timerTextView"
+                android:layout_margin="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroupOptions"
+                android:orientation="vertical"
+                android:layout_below="@+id/quesStatement"
+                android:layout_margin="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/option1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/option2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/option3" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/option4" />
+            </RadioGroup>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/nextButton"
+            android:onClick="nextClicked"
+            android:background="@color/main_red_dark"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitButton"
+            android:onClick="submitClicked"
+            android:background="@color/main_red_dark"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

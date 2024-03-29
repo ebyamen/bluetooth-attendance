@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bluetooth Yoklama Sistemi</string>
+    <string name="title_activity_attendance">Yoklama</string>
+    <string name="title_activity_add_class">Sınıf Ekle</string>
+    <string name="title_activity_temp">Gecici</string>
+    <string name="connect">Baglan</string>
+    <string name="discover">Kesfet</string>
+    <string name="register">Giris</string>
+    <string name="send">Gonder</string>
+</resources>
